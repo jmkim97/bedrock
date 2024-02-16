@@ -7,5 +7,6 @@ Amazon Bedrock Workshop에서 사용하는 VectorDatabase를 FAISS에서 Knowled
 
 - Amazon Bedrock Model access required.
 
-Install library
+
+# Install library
 - pip3 install -r ./setup/requirements.txt -U
