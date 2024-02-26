@@ -13,6 +13,6 @@ Amazon Bedrock Workshop에서 사용하는 VectorDatabase를 FAISS에서 Knowled
 - pip3 install -r ./setup/requirements.txt -U
 
 
-# 챗봇 프로세스 실행 명령어
+# streamlit 실행 명령어
 - streamlit run rag_app.py --server.port 8080
 - streamlit run rag_chatbot_app.py --server.port 8080
