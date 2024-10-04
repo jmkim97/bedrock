@@ -4,7 +4,7 @@ Amazon Bedrock Workshop에서 사용하는 VectorDatabase를 FAISS에서 Knowled
 
 
 # 확인 필요 사항
-- AWS Credential Setting required. (region check!)
+- AWS IAM Role or Credentail Setting required. (region check!)
 
 - Amazon Bedrock Model access required.
 
