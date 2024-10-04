@@ -12,17 +12,21 @@ def retrieveAndGenerate(input, kbId):
             'type': 'KNOWLEDGE_BASE',
             'knowledgeBaseConfiguration': {
                 'knowledgeBaseId': kbId,
-                'modelArn': 'arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-v2:1'
+                'modelArn': 'arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-3-5-sonnet-20240620-v1:0',
+                'retrievalConfiguration': {
+                    'vectorSearchConfiguration': {
+                        'numberOfResults': 100,
+                        'overrideSearchType': 'HYBRID' # Knowledge base의 Vector database가 OpenSearch 일 때만 overrideSearchType을 HYBRID로 세팅 할 수 있습니다.
+                        }
+                    }
                 }
             }
         )
 
 
-def get_rag_response(question): #rag client function
+def get_rag_response(question):
 
-    response_text = retrieveAndGenerate(question, "Knowledge base ID")["output"]["text"]
+    # "Your knowledge base ID"를 생성한 Knowledge base의 ID로 변경해주세요.
+    response_text = retrieveAndGenerate(question, "Your knowledge base ID")["output"]["text"]
 
     return response_text
-
-
-
