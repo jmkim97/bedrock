@@ -4,3 +4,5 @@ langchain_aws
 langchain
 langchain_community
 uuid
+pandas
+Pillow
