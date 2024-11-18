@@ -1,5 +1,5 @@
 #import invoke_agent as agenthelper
-import invokeAgent as invokeAgent
+import agent_lib as invokeAgent
 import streamlit as st
 import json
 import pandas as pd
